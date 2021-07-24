@@ -4,8 +4,6 @@ main(List<String> args) {
 
 }
 
-
-
 class FuncoesComoParametro3 {
   void _executarPor(int qtd, Function(String) fn, String valor) {
     for (var i = 0; i < qtd; i++) {

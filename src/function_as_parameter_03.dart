@@ -1,7 +1,6 @@
 
 main(List<String> args) {
     FuncoesComoParametro3().rodar();
-
 }
 
 class FuncoesComoParametro3 {

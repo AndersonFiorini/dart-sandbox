@@ -1,16 +1,15 @@
 main(List<String> args) {
-  FuncoesComoParametro3().rodar();
+  FunctionAsParam().runTheFunction();
 }
 
-class FuncoesComoParametro3 {
-  void _executarPor(int qtd, Function(String) fn, String valor) {
+class FunctionAsParam {
+  void countPrint(int qtd, Function(String) fn, String value) {
     for (var i = 0; i < qtd; i++) {
-      fn('${i + 1} $valor');
+      fn('${i + 1} $value');
     }
   }
 
-  
-  void rodar() {
-    _executarPor(10, print, 'Muito Legal');
+  void runTheFunction() {
+    countPrint(10, print, 'Great');
   }
 }
